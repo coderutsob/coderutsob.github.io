@@ -455,17 +455,15 @@ I love turning creative ideas into real projects and learning new things every d
  
    <script>
   const button = document.getElementById("button");
-  const submenu = document.querySelector(".submenu");
-let buttonclick=0
-  button.onclick = function() {
-   a= buttonclick++
-  if(a%2===0) {
-    submenu.style.display = "none";
-  }
-  else {
-    submenu.style.display = "flex";
-  }
-  }
+const submenu = document.querySelector(".submenu");
+
+button.onclick = function() {
+    if (submenu.style.display === "flex") {
+        submenu.style.display = "none";
+    } else {
+        submenu.style.display = "flex";
+    }
+       }
   /* 8 */
   const botToken =
    "8160023833:AAFHxwQTshVL3EhQedQJhEapbWPGiRYPn04"; // 🔁 এখানে তোর bot token বসা
