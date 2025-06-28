@@ -139,6 +139,16 @@
             font-style: normal;
             text-align:center ;
             transition:transform 1s ease;
+            animation:cardshow;
+            animation-timeline:view();
+        }
+        @keyframes cardshow {
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
         }
         .per-info .plogo{
             border-radius: 50%;
@@ -165,6 +175,8 @@
             border-radius: 10px;
             gap:20px;
             transition:transform 1s ease;
+            animation:cardshow;
+            animation-timeline:view();
         }
         .about-us h2{
             font-size:1.7rem;
@@ -225,6 +237,8 @@
             align-items: center;
             border-radius: 1rem;
             margin-top:40px;
+            animation:cardshow;
+            animation-timeline:view();
             }
             form {
   width: 90%;
@@ -271,6 +285,8 @@ button:hover {
          .chatbot{
              width: 100%;
              min-width:300px;
+             animation:cardshow;
+             animation-timeline:view();
          }
          @media (min-width: 435px) {
         .chatbot {
@@ -279,7 +295,9 @@ button:hover {
 }
 
         iframe{
-            
+            animation:cardshow;
+            animation-timeline:view();
+            border-radius:20px;
         }
         .contact{
                background: linear-gradient(to bottom, #d3d3d3, #f2f2f2);
@@ -291,6 +309,8 @@ button:hover {
             width: 100%;
             height: 50px;
             border-radius: 1rem;
+            animation:cardshow;
+            animation-timeline:view();
             
         }
         .contact a{
@@ -332,6 +352,8 @@ button:hover {
         }
         footer{
             background-color: #c0c0c0;
+            animation:cardshow;
+            animation-timeline:view();
         }
         
         footer .divf1{
